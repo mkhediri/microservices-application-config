@@ -4,7 +4,7 @@ spring:
   application:
     name: cards
   datasource:
-    url: jdbc:mysql://localhist:3308/cardsdb
+    url: jdbc:mysql://localhost:3308/cardsdb
     username: root
     password: root
   jpa:
