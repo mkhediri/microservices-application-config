@@ -4,18 +4,14 @@ spring:
   application:
     name: accounts
   datasource:
-    url: jdbc:h2:mem:testdb
-    driver-class-name: org.h2.Driver
-    username: sa
-    password: "{cipher}98063bdc7bc8bbba62c5caf13d3871c242bc8e8dd68e006435bc0e276f39ff15"
-  h2:
-    console:
-      enabled: true
+    url: jdbc:mysql://localhist:3306/accountsdb
+    username: root
+    password: root
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
-    hibernate:
-      ddl-auto: update
     show-sql: true
+    sql:
+      init:
+        mode: always
 
 build:
   version: "3.0"
